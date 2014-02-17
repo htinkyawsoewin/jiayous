@@ -15,7 +15,7 @@
     <script src="js/bootstrap.min.js" type="text/javascript" language="javascript"></script>
     
 </head>
-<body>
+<body class="jiayous-signin-body">
     
     <!-- Header Start -->
     
@@ -43,21 +43,51 @@
                 <li>
                   <a href="dashboard.html">View Your Wall</a>
                 </li><li>
-                  <a href="login.html">Login</a>
+                  <a href="index.html">Send Some Love</a>
                 </li><li>
                   <a href="index.html">See Trend</a>
-                </li>   
+                </li>
+                   <li>
+                  <a href="resetpassword.html">Reset Password</a>
+                </li>  
               </ul>      
             </nav>
           </div>
         </header>
     <!-- Header End -->
     
+    <div class="container jiayous-without-margin">
+        <img class="jiayous-signin-img" alt="JIAYOUS" src="img/Login-Pic.png"/>
+    </div>
+    
     <!-- Content Start -->
-    <div class="jiayous-mp-body">
-        <div class="container jiayous-mp-body-container">
-            <h2>Master Page</h2>
+    <div class="container">
+        
+      <form class="form-signin">
+        <h2 class="form-signin-heading jiayous-h2">SIGN IN</h2>
+        <div class="alert alert-danger jiayous-alert">
+          <a id="lblAlert" class="alert-link">You Typed The Wrong Password</a>
         </div>
+          
+          <input type="text" class="form-control" placeholder="Email address" required="" autofocus=""><br/>
+          <input type="password" class="form-control" placeholder="Password" required=""><br/>
+          
+          <div class="row">
+              <div class="col-xs-6">
+                  <label class="label jiayous-ForgetPassword">
+                      <a href="forgetpassword.html">Forget Your Password?</a>
+                  </label>
+              </div>
+              <div class="col-xs-6">
+                  <label class="jiayous-remember">
+                      <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+              </div>
+          </div><br/>
+          
+          <a href="index.html" class="btn btn-lg btn-primary btn-block jiayous-btn-signin">Sign in</a>    
+      </form>
+
     </div>
     <!-- Content End -->
 </body>
